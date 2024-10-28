@@ -18,7 +18,9 @@
             padding: 0;
             min-height: 100%;
             color: #fff;
-            background: #000
+            background: #000;
+            overflow-x: hidden;
+
         }
 
         main {
@@ -85,8 +87,8 @@
             text-decoration: none
         }
     </style>
-  <script type="module" crossorigin src="/design-survey-results/assets/index-XQlM1c6W.js"></script>
-  <link rel="stylesheet" crossorigin href="/design-survey-results/assets/index-Bd0UrJHb.css">
+  <script type="module" crossorigin src="/design-survey-results/assets/index-CjUqs6pB.js"></script>
+  <link rel="stylesheet" crossorigin href="/design-survey-results/assets/index-CKEEwjxi.css">
 </head>
 
 <body>
@@ -103,6 +105,22 @@
     <link rel="preload" href="https://d6vtbcy3ong79.cloudfront.net/telerik-navigation/3.5.50/css/index.min.css"
         as="style">
     <style id="js-tlrk-nav-inline-styles">
+       
+       footer {
+        padding: 30px !important;
+       }
+
+        .TK-Bar {
+          margin-bottom: 0;
+          padding: 0 30px;
+        }
+
+        .TK-container {
+          margin: 0 !important;
+          padding: 0 !important;
+          max-width: 100% !important;
+        }
+
         .TK-Nav--Loading,
         .TK-Nav--Loading * {
             box-sizing: border-box
@@ -116,7 +134,7 @@
 
         .TK-Nav--Loading>.TK-Bar {
             overflow: hidden;
-            background: #fff
+            background: #fff;
         }
 
         .TK-Nav--Loading .TK-TLRK-Brand {
@@ -157,11 +175,13 @@
         }
 
         .form-wrapper {
-            max-width: 900px;
+            max-width: 500px;
             margin: 0 auto 60px;
-            padding: 0 30px;
-      
-
+            padding: 30px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            filter: drop-shadow(0px 0px 8px #d1d1d1);
+            
             .form-element-layout {
                 margin-bottom: 10px;
             }
@@ -172,7 +192,20 @@
                 font-family: 'Open Sans', sans-serif;
             }
 
+            input {
+              max-width: 486px;
+            }
+
+            label {
+              font-size: 13px;
+
+              .elq-required {
+                color: red;
+              }
+            }
+
             input[type=submit] {
+               max-width: 100%;
                 background-color: rgb(235, 2, 73);
                 border-radius: 5px;
                 padding: 10px 20px;
@@ -180,6 +213,8 @@
                 font-weight: bold;
                 border: none;
                 text-transform: uppercase;
+                width: 100%;
+                filter: drop-shadow(0px 0px 3px #9e9e9e);
             }
 
             .LV_valid {
@@ -1366,9 +1401,9 @@
                           <div class="col-sm-12 col-xs-12">
                             <div class="row">
                               <div class="col-xs-12">
-                                <div style="text-align:;">
+
                                   <input type="Submit" class="submit-button-style " value="Submit and Download the Report" id="fe98916">
-                                </div>
+                               
                               </div>
                             </div>
                           </div>
